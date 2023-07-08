@@ -40,7 +40,20 @@ Cat cat3= new Cat("Red", 40, 40);
 //Test.DisplayInfo2();
 
 
-Test test= new Test("Test",20,2,50);
-test.Name= "Test3";
-Console.WriteLine(test.Name);
+//Test test= new Test("Test",20,2,50);
+//test.Name= "Test3";
+//Console.WriteLine(test.Name);
+
+Mango mango = new Mango("Mango", "Yellow", 1.5, "acid");
+Console.WriteLine(mango.Name);
+Console.WriteLine(mango.Color);
+Console.WriteLine(mango.Flavor);
+
+
+Apple apple = new Apple("Apple", "Red", 3, "Circle");
+Console.WriteLine($"{apple.Color} ti titi {apple.Name} nmama {apple.Shape}");
+Console.WriteLine(apple.Color);
+Console.WriteLine(apple.Shape);
+
+
 
