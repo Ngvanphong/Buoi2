@@ -13,11 +13,11 @@ namespace Buoi2
             : base(name, color, weight)
         {
             Flavor = flavor;
-
         }
         public void DisplayName()
         {
             Console.WriteLine(base.Name);
+
         }
 
     }
