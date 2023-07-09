@@ -14,5 +14,7 @@ namespace Buoi2
         {
             Shape = shape;
         }
+       
+
     }
 }

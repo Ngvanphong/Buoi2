@@ -18,6 +18,10 @@ namespace Buoi2
             Color = color;
             Weight= weight;
         }
+        public Fruit()
+        {
+            
+        }
 
         public double TotalPrice()
         {

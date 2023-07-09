@@ -11,7 +11,14 @@ namespace Buoi2
     {
         void DisplayInfo();
 
+        void DisplayInfo(string name);
+
+        void DisplayInfo(int price);
+
+
         double TotalPrice();
+
+
 
     }
 }

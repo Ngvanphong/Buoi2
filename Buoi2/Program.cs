@@ -75,10 +75,11 @@ Building buiding = new Building();*/
 
 using Buoi2;
 
+
 Table table = new Table("Table","Black",10);
 table.DisplayInfo();
-double price=table.TotalPrice();
-Console.WriteLine(price);
+table.DisplayInfo("test string");
+table.DisplayInfo(100);
 
 
 
