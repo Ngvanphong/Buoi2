@@ -81,6 +81,8 @@ table.DisplayInfo();
 table.DisplayInfo("test string");
 table.DisplayInfo(100);
 
+Dog.DisplayNameDog("Dog");
+
 
 
 
