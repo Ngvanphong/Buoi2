@@ -176,8 +176,17 @@ double roundNumber = Math.Round(numberDouble,1);
 int intPart = (int)numberDouble;
 Console.WriteLine(roundNumber);*/
 
-Apple apple = new Apple();
-apple.Name= "Test";
+//Apple apple = new Apple();
+//TestEnum testEnum = TestEnum.Friday;
+//Console.WriteLine((int)testEnum);
+Dog.DisplayNameDog("Dog");
+
+string path=StaticClass.FolderPath;
+StaticClass.FolderPath = @"C:\Autodesk";
+StaticClass.DisplayInfo();
+
+string pathConst  = ConstantsClass.Folder;
+Console.WriteLine(pathConst);
 
 
 

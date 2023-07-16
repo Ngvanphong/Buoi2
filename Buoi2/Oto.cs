@@ -8,9 +8,10 @@ namespace Buoi2
 {
     public class Oto : AbstractClass
     {
+ 
         public override void DisplayInfo(string name)
         {
-            Console.WriteLine(name);
+            Console.WriteLine(StaticClass.FolderPath);
         }
     }
     public partial class Building

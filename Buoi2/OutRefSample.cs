@@ -20,7 +20,6 @@ namespace Buoi2
         public void Subtract(ref double result)
         {
             double subtract  = FirstNumber - SecondNumber; 
-            result = subtract;
         }
 
     }
