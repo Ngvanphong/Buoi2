@@ -16,13 +16,12 @@ namespace Buoi2
         }
         public Apple():base()
         {
-            
         }
        
 
         public void Display()
         {
-            Console.WriteLine(base.Name);
+            Console.WriteLine(Name);
         }
 
 

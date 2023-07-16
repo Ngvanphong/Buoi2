@@ -8,7 +8,7 @@ namespace Buoi2
 {
     public  class Fruit
     {
-        protected string Name { get; set; }
+        protected string Name { set; get; }
         public string Color { set; get; }
         public double Weight { set; get; }
         public double PricePerKg { set; get; }

@@ -8,6 +8,8 @@ namespace Buoi2
 {
     public class Chair : IFurniture
     {
+        public string Name { set; get; }
+        public string Description { set; get; }
         public void DisplayInfo()
         {
             throw new NotImplementedException();

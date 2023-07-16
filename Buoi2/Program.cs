@@ -176,10 +176,13 @@ double roundNumber = Math.Round(numberDouble,1);
 int intPart = (int)numberDouble;
 Console.WriteLine(roundNumber);*/
 
-Oto oto = new Oto();
-oto.Name = "Oto";
-oto.DisplayInfo(oto.Name);
-oto.Display2(oto.Name);
+Apple apple = new Apple();
+apple.Name= "Test";
+
+
+
+
+
 
 
 
