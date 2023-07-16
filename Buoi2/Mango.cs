@@ -14,6 +14,10 @@ namespace Buoi2
         {
             Flavor = flavor;
         }
+        public Mango():base()
+        {
+                
+        }
         public void DisplayName()
         {
             Console.WriteLine(base.Name);

@@ -153,12 +153,34 @@ teset.Name= "Test";
 teset.Color = "Color";*/
 
 
-OutRefSample outRefSample= new OutRefSample();
-outRefSample.FirstNumber = 20.5;
-outRefSample.SecondNumber = 21.5;
-double result = 0;
-outRefSample.Add(out result);
-Console.WriteLine(result);
+//OutRefSample outRefSample= new OutRefSample();
+//outRefSample.FirstNumber = 20.5;
+//outRefSample.SecondNumber = 21.5;
+//double result = 0;
+//outRefSample.Add(out result);
+//outRefSample.Subtract(ref result);
+//Console.WriteLine(result);
+
+
+Apple apple = new Apple();
+apple = new Apple("Apple", "Red", 100, "Circle");
+
+Mango mango = new Mango();
+
+Fruit fruit = apple;
+fruit = mango;
+
+
+double numberDouble = 10.788888;
+double roundNumber = Math.Round(numberDouble,1);
+int intPart = (int)numberDouble;
+Console.WriteLine(roundNumber);
+
+
+
+
+
+
 
 
 

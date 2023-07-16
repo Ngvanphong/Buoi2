@@ -18,6 +18,7 @@ namespace Buoi2
         {
             
         }
+       
 
         public void Display()
         {

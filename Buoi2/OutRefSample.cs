@@ -14,12 +14,12 @@ namespace Buoi2
 
         public void Add(out double result)
         {
-            var total = FirstNumber + SecondNumber;
+            double total = FirstNumber + SecondNumber;
             result = total;
         }
         public void Subtract(ref double result)
         {
-            var subtract  = FirstNumber - SecondNumber; 
+            double subtract  = FirstNumber - SecondNumber; 
             result = subtract;
         }
 
