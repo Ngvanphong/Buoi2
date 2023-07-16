@@ -156,7 +156,8 @@ teset.Color = "Color";*/
 OutRefSample outRefSample= new OutRefSample();
 outRefSample.FirstNumber = 20.5;
 outRefSample.SecondNumber = 21.5;
-outRefSample.Add(out double result);
+double result = 0;
+outRefSample.Add(out result);
 Console.WriteLine(result);
 
 
