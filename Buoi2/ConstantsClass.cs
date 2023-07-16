@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Buoi2
 {
-    public class ConstantsClass
+    public  class ConstantsClass
     {
-        public const string Folder= @"C:\\Autodesk";
+        public const string Folder= @"C:\Autodesk";
     }
 }

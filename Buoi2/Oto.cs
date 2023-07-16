@@ -12,6 +12,7 @@ namespace Buoi2
         public override void DisplayInfo(string name)
         {
             Console.WriteLine(StaticClass.FolderPath);
+            Console.WriteLine(ConstantsClass.Folder);
         }
     }
     public partial class Building
