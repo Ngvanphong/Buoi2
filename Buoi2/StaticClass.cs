@@ -12,7 +12,7 @@ namespace Buoi2
         public static string FolderPath = @"C:\Microsoft";
         public static void DisplayInfo()
         {
-            System.Console.WriteLine(FolderPath);
+            Console.WriteLine(FolderPath);
         }
 
     }
