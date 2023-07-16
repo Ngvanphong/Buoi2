@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Buoi2
 {
-    public class Fruit
+    public  class Fruit
     {
-        public string Name { get; set; }
+        protected string Name { get; set; }
         public string Color { set; get; }
         public double Weight { set; get; }
         public double PricePerKg { set; get; }
@@ -16,7 +16,7 @@ namespace Buoi2
         {
             Name = name;
             Color = color;
-            Weight= weight;
+            Weight = weight;
         }
         public Fruit()
         {

@@ -8,7 +8,6 @@ namespace Buoi2
 {
     public abstract class AbstractClass
     {
-       
         public abstract void DisplayInfo(string name);
     }
 

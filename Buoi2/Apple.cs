@@ -14,7 +14,16 @@ namespace Buoi2
         {
             Shape = shape;
         }
-       
+        public Apple():base()
+        {
+            
+        }
+
+        public void Display()
+        {
+            Console.WriteLine(base.Name);
+        }
+
 
     }
 }
