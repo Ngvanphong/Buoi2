@@ -8,7 +8,12 @@ namespace Buoi2
 {
     public abstract class AbstractClass
     {
+        public string Name { get; set; }
         public abstract void DisplayInfo(string name);
+        public void Display2(string name)
+        {
+            Console.WriteLine(name);
+        }
     }
 
     public partial class Building

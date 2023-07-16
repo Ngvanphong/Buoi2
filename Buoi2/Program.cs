@@ -162,7 +162,7 @@ teset.Color = "Color";*/
 //Console.WriteLine(result);
 
 
-Apple apple = new Apple();
+/*Apple apple = new Apple();
 apple = new Apple("Apple", "Red", 100, "Circle");
 
 Mango mango = new Mango();
@@ -174,7 +174,12 @@ fruit = mango;
 double numberDouble = 10.788888;
 double roundNumber = Math.Round(numberDouble,1);
 int intPart = (int)numberDouble;
-Console.WriteLine(roundNumber);
+Console.WriteLine(roundNumber);*/
+
+Oto oto = new Oto();
+oto.Name = "Oto";
+oto.DisplayInfo(oto.Name);
+oto.Display2(oto.Name);
 
 
 

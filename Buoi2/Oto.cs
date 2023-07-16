@@ -10,7 +10,7 @@ namespace Buoi2
     {
         public override void DisplayInfo(string name)
         {
-            Console.WriteLine("xe {0}",name);
+            Console.WriteLine(name);
         }
     }
     public partial class Building
