@@ -18,16 +18,11 @@ listInt.Add(4);
 listInt.Add(3);
 
 
-
-
 //for(int i= 0; i < listStudent.Count; i++)
 //{
 //    Student item = listStudent[i];
 //    Console.WriteLine("Tuoi: "+item.Age);
 //}
-
-
-
 
 
 //int[] arrayInt = { 1, 2, 2, 2, 33, 6 };
