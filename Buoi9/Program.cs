@@ -1,0 +1,138 @@
+﻿
+using Buoi9;
+using System.Collections;
+using System.Data;
+
+Student std1 = new Student();
+std1.Name = "Student 1";
+std1.Id = 1;
+std1.Age = 17;
+Student std2 = new Student { Name = "Student 2", Id = 2, Age = 20 };
+Student std3 = new Student("Student 3", 3, 18);
+Student std4 = new Student("Student 3", 4, 18);
+
+
+List<int> listInt = new List<int>();
+listInt.Add(3);
+listInt.Add(4);
+listInt.Add(3);
+
+
+
+
+//for(int i= 0; i < listStudent.Count; i++)
+//{
+//    Student item = listStudent[i];
+//    Console.WriteLine("Tuoi: "+item.Age);
+//}
+
+
+
+
+
+//int[] arrayInt = { 1, 2, 2, 2, 33, 6 };
+//int total = 0;
+//listInt.ForEach((x) =>total += x);
+//Console.WriteLine(total);
+
+List<Student> listStudent = new List<Student>();
+listStudent.Add(std1);
+listStudent.Add(std2);
+listStudent.Add(std3);
+listStudent.Add(std4);
+
+IEnumerable<Student> student18s = listStudent.Where(x => x.Age >16 && x.Age<=18);
+
+//Console.WriteLine(student18s.Count());
+//foreach (Student student in student18s)
+//{
+//    Console.WriteLine(student.Name);
+//}
+
+IList listTypes = new ArrayList();
+listTypes.Add(0);
+listTypes.Add(1);
+listTypes.Add(std4);
+listTypes.Add("hhhhh");
+listTypes.Add('d');
+
+IEnumerable<Student> listStringFromType = listTypes.OfType<Student>();
+//Console.WriteLine(listStringFromType.Count());
+//foreach(var item in listStringFromType)
+//{
+//    Console.WriteLine(item.Name);
+//}
+
+IEnumerable<Student> listOrder = listStudent.OrderBy(x => x.Age).ThenBy(x=>x.Name);
+//listOrder= listStudent.OrderByDescending(x => x.Age);
+//foreach(Student student in listOrder)
+//{
+//    Console.WriteLine(student.Name);
+//}
+
+var listOrderBy = from st in listStudent
+                  orderby st.Age, st.Name
+                  select st.Name;
+//foreach(var name in listOrderBy)
+//{
+//    Console.WriteLine(name);
+//}
+                  
+
+var listGroup = from std in listStudent
+                group std by std.Age;
+
+
+//foreach (var item in listGroup)
+//{
+//    Console.WriteLine(item.Key);
+//    foreach (var studentItem in item)
+//    {
+//        Console.WriteLine(studentItem.Name);
+//    }
+//}
+
+IEnumerable<string> allName = from st in listStudent select st.Name;
+allName = allName.Distinct();
+foreach (var name in allName)
+{
+    Console.WriteLine(name);
+}
+
+//List<string> allName2 = new List<string>();
+//foreach(Student st in listStudent)
+//{
+//    allName2.Add(st.Name);
+//}
+
+//allName2 = allName2.Distinct().ToList();
+
+//foreach (var name in allName2)
+//{
+//    Console.WriteLine(name);
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

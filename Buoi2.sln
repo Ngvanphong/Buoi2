@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buoi2", "Buoi2\Buoi2.csproj", "{7731675C-FB4E-431E-B7F8-D8612BA347A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Buoi2", "Buoi2\Buoi2.csproj", "{7731675C-FB4E-431E-B7F8-D8612BA347A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buoi9", "Buoi9\Buoi9.csproj", "{FE6652EA-3B54-4B12-B7E3-F8D6BDC5D171}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7731675C-FB4E-431E-B7F8-D8612BA347A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7731675C-FB4E-431E-B7F8-D8612BA347A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7731675C-FB4E-431E-B7F8-D8612BA347A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE6652EA-3B54-4B12-B7E3-F8D6BDC5D171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE6652EA-3B54-4B12-B7E3-F8D6BDC5D171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE6652EA-3B54-4B12-B7E3-F8D6BDC5D171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE6652EA-3B54-4B12-B7E3-F8D6BDC5D171}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -179,14 +179,16 @@ Console.WriteLine(roundNumber);*/
 //Apple apple = new Apple();
 //TestEnum testEnum = TestEnum.Friday;
 //Console.WriteLine((int)testEnum);
-Dog.DisplayNameDog("Dog");
+//Dog.DisplayNameDog("Dog");
 
-string path=StaticClass.FolderPath;
-StaticClass.FolderPath = @"C:\Autodesk";
-StaticClass.DisplayInfo();
+//string path=StaticClass.FolderPath;
+//StaticClass.FolderPath = @"C:\Autodesk";
+//StaticClass.DisplayInfo();
 
-string pathConst  = ConstantsClass.Folder;
-Console.WriteLine(pathConst);
+//string pathConst  = ConstantsClass.Folder;
+//Console.WriteLine(pathConst);
+
+
 
 
 
