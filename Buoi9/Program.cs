@@ -82,7 +82,6 @@ var listOrderBy = from st in listStudent
 var listGroup = from std in listStudent
                 group std by std.Age;
 
-
 //foreach (var item in listGroup)
 //{
 //    Console.WriteLine(item.Key);
