@@ -123,7 +123,7 @@ IEnumerable<Student> listAllSameName = listStudent.Where(x => x.Name == "Student
 //Student std3 = new Student("Student 3", 3, 18);
 //Student std4 = new Student("Student 3", 4, 19);
 
-bool isAll = listStudent.All(x => x.Name == "Student 3");
+//bool isAll = listStudent.All(x => x.Name == "Student 3");
 bool isExist = listStudent.Exists(x => x.Name == "Student 3");
 //Console.WriteLine(isAll);
 
@@ -134,14 +134,17 @@ Student st5 = new Student();
 bool isContain = listStudent.Contains(std1);
 
 //Console.WriteLine(isContain);
+List<int> listInt2 = new List<int>() { 22, 2, 2, 2, };
+int max2= listInt2.Max();
 
 int maxAge = listStudent.Max(x=>x.Age);
 
+int total2 = listInt2.Sum();
 int totalSum= listStudent.Sum(x=>x.Age);
 
 Student firstStudent = listStudent.First();
 Student lastStudent = listStudent.Last();
-Student middleStudent = listStudent.ElementAt(2);
+Student middleStudent = listStudent[2];
 
 //listStudent.Remove(std1);
 //int totaRemove= listStudent.RemoveAll(x => x.Age < 19);
@@ -153,7 +156,7 @@ Student firstStudentDefault = testList.FirstOrDefault(x => x.Name == "Student 3"
 Student lastOrDefault = testList.LastOrDefault();
 
 Student firstBy = listStudent.First(x => x.Name == "Student 3");
-Student singleStudent = listStudent.Single(x => x.Name == "Student 2");
+//Student singleStudent = listStudent.Single(x => x.Name == "Student 2");
 Console.WriteLine(firstBy.Name);
 
 ////
