@@ -144,9 +144,14 @@ Student firstStudent = listStudent.First();
 Student lastStudent = listStudent.Last();
 Student middleStudent = listStudent.ElementAt(2);
 
+listStudent.Remove(std1);
+int totaRemove= listStudent.RemoveAll(x => x.Age < 19);
+
+//Console.WriteLine(totaRemove);
+
 List<Student> testList= new List<Student>();
-Student firstStudentNo = testList.FirstOrDefault();
-Student lastOrDefeat = listStudent.LastOrDefault();
+Student firstStudentDefault = testList.FirstOrDefault();
+Student lastOrDefault = testList.LastOrDefault();
 
 
 
