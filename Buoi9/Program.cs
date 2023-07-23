@@ -7,7 +7,7 @@ Student std1 = new Student();
 std1.Name = "Student 1";
 std1.Id = 1;
 std1.Age = 17;
-Student std2 = new Student { Name = "Student 2", Id = 2, Age = 20 };
+Student std2 = new Student { Name = "Student 2", Id = 2, Age = 20};
 Student std3 = new Student("Student 3", 3, 18);
 Student std4 = new Student("Student 3", 4, 19);
 
