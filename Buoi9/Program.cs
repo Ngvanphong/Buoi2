@@ -142,9 +142,11 @@ int totalSum= listStudent.Sum(x=>x.Age);
 
 Student firstStudent = listStudent.First();
 Student lastStudent = listStudent.Last();
+Student middleStudent = listStudent.ElementAt(2);
 
 List<Student> testList= new List<Student>();
 Student firstStudentNo = testList.FirstOrDefault();
+Student lastOrDefeat = listStudent.LastOrDefault();
 
 
 
