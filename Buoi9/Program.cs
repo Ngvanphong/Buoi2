@@ -134,7 +134,7 @@ Student st5 = new Student();
 
 bool isContain = listStudent.Contains(std1);
 
-Console.WriteLine(isContain);
+//Console.WriteLine(isContain);
 
 int maxAge = listStudent.Max(x=>x.Age);
 
@@ -144,8 +144,8 @@ Student firstStudent = listStudent.First();
 Student lastStudent = listStudent.Last();
 Student middleStudent = listStudent.ElementAt(2);
 
-listStudent.Remove(std1);
-int totaRemove= listStudent.RemoveAll(x => x.Age < 19);
+//listStudent.Remove(std1);
+//int totaRemove= listStudent.RemoveAll(x => x.Age < 19);
 
 //Console.WriteLine(totaRemove);
 
@@ -155,7 +155,24 @@ Student lastOrDefault = testList.LastOrDefault();
 
 Student firstBy = listStudent.First(x => x.Name == "Student 3");
 
-Student singleStudent = listStudent.Single(x => x.Name == "Student 3");
+Student singleStudent = listStudent.Single(x => x.Name == "Student 2");
+
+Console.WriteLine(firstBy.Name);
+
+
+////
+List<Student> newListStudent = new List<Student>();
+foreach(var item in listStudent)
+{
+    if (!newListStudent.Exists(x => x.Name == item.Name))
+    {
+        newListStudent.Add(item);
+    }
+}
+
+Console.WriteLine(newListStudent.Count);
+
+
 
 
 
