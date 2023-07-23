@@ -150,8 +150,13 @@ int totaRemove= listStudent.RemoveAll(x => x.Age < 19);
 //Console.WriteLine(totaRemove);
 
 List<Student> testList= new List<Student>();
-Student firstStudentDefault = testList.FirstOrDefault();
+Student firstStudentDefault = testList.FirstOrDefault(x => x.Name == "Student 3");
 Student lastOrDefault = testList.LastOrDefault();
+
+Student firstBy = listStudent.First(x => x.Name == "Student 3");
+
+Student singleStudent = listStudent.Single(x => x.Name == "Student 3");
+
 
 
 
