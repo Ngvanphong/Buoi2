@@ -132,8 +132,23 @@ bool isHasIitem = listStudent.Any(x=>x.Name== "Student 3");
 
 Student st5 = new Student();
 
-bool isContain = listStudent.Contains(st5);
+bool isContain = listStudent.Contains(std1);
+
 Console.WriteLine(isContain);
+
+int maxAge = listStudent.Max(x=>x.Age);
+
+int totalSum= listStudent.Sum(x=>x.Age);
+
+Student firstStudent = listStudent.First();
+Student lastStudent = listStudent.Last();
+
+List<Student> testList= new List<Student>();
+Student firstStudentNo = testList.FirstOrDefault();
+
+
+
+
 
 
 
