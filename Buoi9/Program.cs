@@ -9,7 +9,7 @@ std1.Id = 1;
 std1.Age = 17;
 Student std2 = new Student { Name = "Student 2", Id = 2, Age = 20 };
 Student std3 = new Student("Student 3", 3, 18);
-Student std4 = new Student("Student 3", 4, 18);
+Student std4 = new Student("Student 3", 4, 19);
 
 
 List<int> listInt = new List<int>();
@@ -88,10 +88,10 @@ var listGroup = from std in listStudent
 
 IEnumerable<string> allName = from st in listStudent select st.Name;
 allName = allName.Distinct();
-foreach (var name in allName)
-{
-    Console.WriteLine(name);
-}
+//foreach (var name in allName)
+//{
+//    Console.WriteLine(name);
+//}
 
 //List<string> allName2 = new List<string>();
 //foreach(Student st in listStudent)
@@ -105,6 +105,35 @@ foreach (var name in allName)
 //{
 //    Console.WriteLine(name);
 //}
+
+
+IEnumerable<Student> listAllSameName = listStudent.Where(x => x.Name == "Student 3");
+//foreach (var student in listAllSameName)
+//{
+//    Console.WriteLine(student.Age);
+//}
+
+//Console.WriteLine(listAllSameName.Count());
+
+
+//Student std1 = new Student();
+//std1.Name = "Student 1";
+//std1.Id = 1;
+//std1.Age = 17;
+//Student std2 = new Student { Name = "Student 2", Id = 2, Age = 20 };
+//Student std3 = new Student("Student 3", 3, 18);
+//Student std4 = new Student("Student 3", 4, 19);
+
+bool isAll = listStudent.All(x => x.Name == "Student 3");
+bool isExist = listStudent.Exists(x => x.Name == "Student 3");
+//Console.WriteLine(isAll);
+
+bool isHasIitem = listStudent.Any(x=>x.Name== "Student 3");
+
+Student st5 = new Student();
+
+bool isContain = listStudent.Contains(st5);
+Console.WriteLine(isContain);
 
 
 
