@@ -67,6 +67,7 @@ IEnumerable<Student> listOrder = listStudent.OrderBy(x => x.Age).ThenBy(x=>x.Nam
 var listOrderBy = from st in listStudent
                   orderby st.Age, st.Name
                   select st.Name;
+
 //foreach(var name in listOrderBy)
 //{
 //    Console.WriteLine(name);
