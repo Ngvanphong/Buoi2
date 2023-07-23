@@ -153,11 +153,8 @@ Student firstStudentDefault = testList.FirstOrDefault(x => x.Name == "Student 3"
 Student lastOrDefault = testList.LastOrDefault();
 
 Student firstBy = listStudent.First(x => x.Name == "Student 3");
-
 Student singleStudent = listStudent.Single(x => x.Name == "Student 2");
-
 Console.WriteLine(firstBy.Name);
-
 
 ////
 List<Student> newListStudent = new List<Student>();
