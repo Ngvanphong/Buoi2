@@ -47,7 +47,7 @@ IList listTypes = new ArrayList();
 listTypes.Add(0);
 listTypes.Add(1);
 listTypes.Add(std4);
-listTypes.Add("hhhhh");
+listTypes.Add("Demo");
 listTypes.Add('d');
 
 IEnumerable<Student> listStringFromType = listTypes.OfType<Student>();
